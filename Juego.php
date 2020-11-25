@@ -1,6 +1,7 @@
 <?php
 
 //a ver si funciona
+//esto seria el menu
 echo "Bienvenido al juego del ahorcado \n";
 echo "pulse:\n1 - Para jugar con una palabra aleatoria\n
     2 - Para jugar con palabra a eleccion\n
