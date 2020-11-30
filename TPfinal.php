@@ -525,7 +525,7 @@ do{
         break;
     case 6: //Mostrar la información completa del primer juego que supere un puntaje indicado por el usuario
             //int $mostrarPrimerDato
-            $mostrarPrimerDato=mostrarPrimerPuntaje($coleccionJuegos,$coleccionPalabras);
+            $mostrarPrimerDato=infoPrimerPuntaje($coleccionJuegos,$coleccionPalabras);
         break;
     case 7: //Mostrar la lista de palabras ordenada por orden alfabetico
             $mostrarOrdenados=mostrarPorOrden($coleccionPalabras);
