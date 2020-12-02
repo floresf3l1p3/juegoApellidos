@@ -164,7 +164,7 @@ function verificarPalabra($coleccionPalabras)//punto 7
 {
     //string $esPalabra,$pal ,$palabra, $pista
     //int $compararPal, $puntaje ,$catindad
-    echo"Ingrese una palabra:";
+    echo"Ingrese una palabra: ";
     $palabraNueva = trim(fgets(STDIN));
     $compararPal = existePalabra($coleccionPalabras,$palabraNueva);//comparar la palabra.
     while ($compararPal) {
@@ -322,7 +322,7 @@ function jugar($coleccionPalabras, $indicePalabra, $cantIntentos){//punto 14
     /*>>> Completar el cuerpo de la función, respetando lo indicado en la documentacion <<<*/
     $palabraFueDescubierta=false;
     //Mostrar pista:
-    echo"pista".$coleccionPalabras[$indicePalabra]["pista"]."\n";
+    echo"pista ".$coleccionPalabras[$indicePalabra]["pista"]."\n";
     $descubiertas= array();
     //solicitar letras mientras haya intentos y la palabra no haya sido descubierta:
     do {
@@ -336,7 +336,7 @@ function jugar($coleccionPalabras, $indicePalabra, $cantIntentos){//punto 14
             $coleccionLetras=$descubiertas;
         }else {
             $cantIntentos--;
-            echo"la letra: ".$letra ."no pertenece a la palabra. QUEDAN ".$cantIntentos." Intentos \n";
+            echo"la letra: ".$letra ." no pertenece a la palabra. QUEDAN ".$cantIntentos." Intentos \n";
 
         }
         $palabraFueDescubierta=palabraDescubierta($descubiertas);
